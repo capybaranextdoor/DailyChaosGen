@@ -1,0 +1,9 @@
+{
+	"appId": "com.dailychaos.creator",
+	"appName": "Daily Chaos Creator",
+	"webDir": "dist",
+	"bundledWebRuntime": false,
+	"server": {
+		"androidScheme": "https"
+	}
+}

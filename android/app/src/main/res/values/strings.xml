@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Daily Chaos Creator</string>
+    <string name="title_activity_main">Daily Chaos Creator</string>
+    <string name="package_name">com.dailychaos.creator</string>
+    <string name="custom_url_scheme">com.dailychaos.creator</string>
+</resources>

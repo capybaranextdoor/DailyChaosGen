@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "Courier New", Courier, monospace;
+  --color-chaos-bg: #F4F4F1;
+  --color-chaos-ink: #1A1A1A;
+  --color-chaos-accent: #FF5D22;
+  --color-chaos-surface: #FFFFFF;
+}
+
+@layer base {
+  body {
+    @apply bg-chaos-bg text-chaos-ink font-sans antialiased;
+    /* Prevent pull-to-refresh and overscroll bounce on mobile */
+    overscroll-behavior-y: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pt-safe {
+    padding-top: env(safe-area-inset-top);
+  }
+  .px-safe {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
+}
